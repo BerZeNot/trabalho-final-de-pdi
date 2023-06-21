@@ -1,10 +1,16 @@
 def showHelp():
     print("\nIMAGE TEXT EXTRATOR - v1.0.0")
-    print("\nUso básico: Application.py nome-da-imagem.jpg")
+    print("\nUso básico: python Application.py nome-da-imagem.jpg")
     print("\nCom esse comando, o programa fará a extração do texto e exibirá na tela do console.")
     print("\nCaso deseje salvar o texto extraido em um arquivo, use o parâmetro '-o nome-do-arquivo-de-saida.txt'. Veja o exeplo:")
-    print("\n\tApplication.py image.png -o textoExtraido.txt\n\n")
-    print("₢ Ferreira & Oliveira Software House - Todos os direitos reservados.\n")
+    print("\n\tpython Application.py image.png -o textoExtraido.txt\n")
+    print("\nEm alguns casos, a imagem que contém o texto pode ser muito grande e isso pode influenciar na qualidade do reconhecimento.")
+    print("\nPara resolver esse problema, use a flag --resize. Ela reduzirá o tamanho da imagem em 50% antes de processá-la.")
+    print("\nVeja o exemplo:")
+    print("\n\tpython Application.py imagename.png --resize")
+    print("\nCaso também esteja usando a flag para salvar o texto em um arquivo, lembre-se de colocar a flag --resize no final do comando.")
+    print("\n\tpython Application.py imageName.png -o imageInText.txt --resize")
+    print("\n\n₢ Ferreira & Oliveira Software House - Todos os direitos reservados.\n")
 
 def saveTextIntoAFile(text, filename):
     print("Saving text...")
